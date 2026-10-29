@@ -151,6 +151,11 @@ footer{background:var(--rod-dyb);color:var(--creme);padding:50px 0;text-align:ce
 footer p{margin:4px 0}
 
 @media (max-width:640px){
+  .topbar nav{display:grid;grid-template-columns:auto 1fr auto;align-items:center}
+  .topbar .menuknap{grid-column:1;grid-row:1}
+  .topbar .logo{grid-column:2;grid-row:1;text-align:center;line-height:1.6;font-size:.8rem}
+  .topbar .logo span{display:block}
+  .topbar nav::after{content:"";grid-column:3;grid-row:1;width:74px}
   body{font-size:18px}
   nav{padding:14px 0}
   .menuknap{display:inline-flex}
@@ -168,7 +173,7 @@ footer p{margin:4px 0}
 
 <div class="topbar"><div class="wrap">
     <nav id="menu">
-      <a href="#" class="logo smaa">Bondemarked Oremandsgaard</a>
+      <a href="#" class="logo smaa"><span>Bondemarked</span> <span>Oremandsgaard</span></a>
       <button class="menuknap" type="button" aria-expanded="false" aria-controls="menuliste">Menu</button>
       <ul class="smaa" id="menuliste">
         <li><a href="#datoer">Datoer</a></li>
@@ -183,8 +188,6 @@ footer p{margin:4px 0}
 <header>
   <div class="wrap">
     <div class="hero">
-      <p class="smaa">Præstø · Siden 2020</p>
-      <div class="streg"></div>
       <h1>Bondemarked<br><em>på Oremandsgaard</em></h1>
       <p class="under">Mød dem, der laver din mad.</p>
       <div class="naeste">
@@ -201,6 +204,7 @@ footer p{margin:4px 0}
 
 <section class="sektion" id="om">
   <div class="wrap">
+    <p class="smaa" style="text-align:center;margin-bottom:10px">Præstø · Siden 2020</p>
     <h2>Et marked for råvarer og håndværk</h2>
     <div class="streg"></div>
     <p class="intro">Første lørdag i måneden fylder lokale fødevareproducenter og håndværkere gårdrummet foran Radius Distillery på Oremandsgaard. Vi håndplukker stadeholderne – kvalitet frem for antal.</p>
