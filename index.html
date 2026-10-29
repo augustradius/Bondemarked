@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bondemarked på Oremandsgaard</title>
+<meta name="description" content="Kurateret bondemarked med lokale fødevareproducenter og håndværkere på Oremandsgaard ved Præstø. Første lørdag i måneden kl. 11–14. Gratis entré og parkering.">
+<meta property="og:title" content="Bondemarked på Oremandsgaard">
+<meta property="og:description" content="Mød dem, der laver din mad. Første lørdag i måneden kl. 11–14 på Oremandsgaard ved Præstø.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://bondemarked.dk/billeder/gaardrummet.jpg">
+<meta property="og:url" content="https://bondemarked.dk/">
+<meta name="theme-color" content="#7A161C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+[
+ {"@context":"https://schema.org","@type":"Event","name":"Bondemarked på Oremandsgaard","startDate":"2026-11-07T11:00+01:00","endDate":"2026-11-07T14:00+01:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","isAccessibleForFree":true,"location":{"@type":"Place","name":"Oremandsgaard","address":{"@type":"PostalAddress","streetAddress":"Oremandsgaard Allé 2","postalCode":"4720","addressLocality":"Præstø","addressCountry":"DK"}},"organizer":{"@type":"Organization","name":"Oremandsgaard Kammermusikfest, Bondemarked & Kultur","url":"https://bondemarked.dk/","email":"john@radiusdistillery.com"}},
+ {"@context":"https://schema.org","@type":"Event","name":"Julemarked – Bondemarked på Oremandsgaard","startDate":"2026-12-05T11:00+01:00","endDate":"2026-12-05T14:00+01:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","isAccessibleForFree":true,"location":{"@type":"Place","name":"Oremandsgaard","address":{"@type":"PostalAddress","streetAddress":"Oremandsgaard Allé 2","postalCode":"4720","addressLocality":"Præstø","addressCountry":"DK"}},"organizer":{"@type":"Organization","name":"Oremandsgaard Kammermusikfest, Bondemarked & Kultur","url":"https://bondemarked.dk/","email":"john@radiusdistillery.com"}}
+]
+</script>
+<style>
+:root{
+  --rod:#7A161C;
+  --creme:#F8F4EB;
+  --rod-dyb:#5E1015;
+  --linje:rgba(248,244,235,.35);
+  --linje-rod:rgba(122,22,28,.25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-variant-numeric:lining-nums;
+  background:var(--creme);color:var(--rod);
+  font-size:20px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.smaa{font-variant:small-caps;letter-spacing:.22em;text-transform:lowercase;font-size:.95rem}
+.streg{width:50px;height:1px;background:currentColor;opacity:.7;margin:22px auto}
+h1,h2,h3{font-weight:500;line-height:1.1}
+h2{font-size:2.4rem;text-align:center}
+.sektion{padding:80px 0;border-top:1px solid var(--linje-rod)}
+.sektion.rod{background:var(--rod);color:var(--creme);border-top:none}
+.intro{max-width:620px;margin:0 auto;text-align:center;font-size:1.2rem}
+
+/* top */
+header{background:var(--rod);color:var(--creme)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px}
+nav .logo{text-decoration:none;font-size:.85rem}
+nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+nav ul a{text-decoration:none;font-size:.85rem}
+nav ul a:hover{opacity:.7}
+.topbar{position:sticky;top:0;z-index:20;background:var(--rod);color:var(--creme);border-bottom:1px solid var(--linje)}
+.topbar nav{position:relative}
+.menuknap{display:none;align-items:center;gap:8px;background:none;border:1px solid var(--linje);color:var(--creme);font:inherit;font-variant:small-caps;letter-spacing:.2em;text-transform:lowercase;font-size:.9rem;padding:8px 14px;cursor:pointer}
+/* karrusel */
+.karrusel{position:relative;margin-top:44px}
+.spor{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.spor::-webkit-scrollbar{display:none}
+.spor figure{flex:0 0 auto;width:min(78vw,420px);scroll-snap-align:start;margin:0}
+.spor img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.spor figcaption{font-style:italic;font-size:.95rem;margin-top:8px}
+.pil{position:absolute;top:calc(50% - 40px);width:44px;height:44px;border-radius:50%;border:none;background:var(--creme);color:var(--rod);font-size:1.4rem;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.pil.venstre{left:-10px}.pil.hoejre{right:-10px}
+@media (max-width:640px){.pil{display:none}}
+.hero{text-align:center;padding:70px 0 90px}
+.hero h1{font-size:clamp(2.8rem,8vw,5.2rem)}
+.hero h1 em{font-style:italic;font-weight:400}
+.hero .under{font-size:1.35rem;margin-top:6px}
+.naeste{
+  display:inline-block;margin-top:44px;padding:22px 34px;
+  border:1px solid var(--linje);
+}
+.naeste .dato{font-size:2rem;font-weight:500;margin:4px 0 2px}
+
+/* fotos */
+.foto{margin:60px 0 0}
+.foto img{display:block;width:100%;height:auto}
+.foto figcaption{text-align:center;font-style:italic;margin-top:12px;font-size:1.05rem}
+.foto-top{margin:0;padding-bottom:50px}
+.hero{padding-bottom:60px}
+
+/* datoer */
+.datoer{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:44px}
+.dato-kort{border:1px solid var(--linje-rod);padding:30px 24px;text-align:center}
+.dato-kort .dag{font-size:2rem;font-weight:500}
+.dato-kort .navn{font-style:italic;font-size:1.15rem;margin-top:4px}
+.note{text-align:center;margin-top:28px;font-style:italic}
+
+/* om */
+.tre{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-top:50px;text-align:center}
+.tre h3{font-size:1.5rem;margin-bottom:8px}
+
+/* stadeholdere */
+.grupper{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px 50px;margin-top:50px}
+.grupper h3{font-size:.95rem;font-variant:small-caps;letter-spacing:.2em;text-transform:lowercase;font-weight:500;border-bottom:1px solid var(--linje);padding-bottom:8px;margin-bottom:12px}
+.grupper ul{list-style:none}
+.grupper li{padding:5px 0;font-size:1.2rem;font-weight:500;line-height:1.25}
+.grupper li span{display:block;font-weight:400;font-style:italic;font-size:1rem;opacity:.85}
+.rod .note{opacity:.9}
+.oevrige{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;max-width:760px;margin:40px auto 0;font-size:1.25rem}
+.oevrige li{white-space:nowrap}
+
+/* producentkort */
+.kortgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px 22px;margin-top:50px}
+.kort img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.kort h3{font-size:1.3rem;margin-top:12px}
+.kort p{font-style:italic;font-size:1rem;opacity:.85;line-height:1.3}
+.ogsaa{font-size:.95rem;font-variant:small-caps;letter-spacing:.2em;text-transform:lowercase;font-weight:500;text-align:center;margin-top:56px}
+.ogsaa-liste{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px;margin-top:18px;text-align:center}
+.ogsaa-liste li{font-size:1.15rem;font-weight:500}
+.ogsaa-liste span{display:block;font-weight:400;font-style:italic;font-size:.95rem;opacity:.85}
+@media (max-width:640px){.kortgrid{grid-template-columns:1fr 1fr;gap:20px 14px}.kort h3{font-size:1.1rem}.kort p{font-size:.9rem}}
+
+.portraet{max-width:680px;margin:64px auto 0;padding:36px 32px;border:1px solid var(--linje);text-align:left}
+.portraet .smaa{text-align:center}
+.portraet-foto{display:block;width:100%;max-width:340px;height:auto;margin:0 auto 26px}
+.portraet h3{font-size:1.7rem;text-align:center;margin:10px 0 18px}
+.portraet p{margin-top:12px}
+.portraet .kilde{font-size:.9rem;font-style:italic;opacity:.8;text-align:right}
+@media (max-width:640px){.portraet{padding:26px 18px}.portraet h3{font-size:1.4rem}}
+
+.stadeinfo{list-style:none;max-width:620px;margin:28px auto 8px;text-align:left}
+.stadeinfo li{padding:8px 0;border-bottom:1px solid var(--linje)}
+.stadeinfo strong{font-weight:600}
+
+/* praktisk */
+.praktisk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px;margin-top:50px}
+.praktisk h3{font-size:1.5rem;margin-bottom:8px}
+.knap{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid currentColor;text-decoration:none;font-size:.85rem}
+.knap:hover{background:var(--rod);color:var(--creme)}
+.rod .knap:hover{background:var(--creme);color:var(--rod)}
+
+/* faq */
+.faq{max-width:700px;margin:44px auto 0}
+details{border-bottom:1px solid var(--linje-rod);padding:18px 0}
+summary{cursor:pointer;font-size:1.3rem;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:400}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px}
+
+/* omtale */
+.omtale{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 40px;margin-top:30px;font-size:1.45rem;font-style:italic}
+
+footer{background:var(--rod-dyb);color:var(--creme);padding:50px 0;text-align:center;font-size:1rem}
+footer p{margin:4px 0}
+
+@media (max-width:640px){
+  body{font-size:18px}
+  nav{padding:14px 0}
+  .menuknap{display:inline-flex}
+  nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--rod);flex-direction:column;gap:0;padding:6px 20px 18px;border-bottom:1px solid var(--linje)}
+  nav.aaben ul{display:flex}
+  nav ul a{display:block;padding:12px 0;font-size:1rem;border-top:1px solid var(--linje)}
+  .hero{padding:40px 0 64px}
+  .sektion{padding:60px 0}
+  h2{font-size:2rem}
+  .naeste{padding:18px 22px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+    <nav id="menu">
+      <a href="#" class="logo smaa">Bondemarked Oremandsgaard</a>
+      <button class="menuknap" type="button" aria-expanded="false" aria-controls="menuliste">Menu</button>
+      <ul class="smaa" id="menuliste">
+        <li><a href="#datoer">Datoer</a></li>
+        <li><a href="#stadeholdere">7. november</a></li>
+        <li><a href="#udstillere">Udstillere</a></li>
+        <li><a href="#billeder">Billeder</a></li>
+        <li><a href="#praktisk">Praktisk</a></li>
+        <li><a href="#faq">Spørgsmål</a></li>
+      </ul>
+    </nav>
+</div></div>
+<header>
+  <div class="wrap">
+    <div class="hero">
+      <p class="smaa">Præstø · Siden 2020</p>
+      <div class="streg"></div>
+      <h1>Bondemarked<br><em>på Oremandsgaard</em></h1>
+      <p class="under">Mød dem, der laver din mad.</p>
+      <div class="naeste">
+        <p class="smaa">Næste marked</p>
+        <p class="dato">Lørdag 7. november</p>
+        <p>kl. 11–14 · Gratis entré</p>
+      </div>
+    </div>
+    <figure class="foto foto-top">
+      <img src="billeder/gaardrummet.jpg" width="1200" height="800" alt="Gårdrummet foran Radius Distillery fyldt med gæster og parasoller på en solskinsdag" fetchpriority="high">
+    </figure>
+  </div>
+</header>
+
+<section class="sektion" id="om">
+  <div class="wrap">
+    <h2>Et marked for råvarer og håndværk</h2>
+    <div class="streg"></div>
+    <p class="intro">Første lørdag i måneden fylder lokale fødevareproducenter og håndværkere gårdrummet foran Radius Distillery på Oremandsgaard. Vi håndplukker stadeholderne – kvalitet frem for antal.</p>
+    <div class="tre">
+      <div><h3>Lokalt</h3><p>Kød, grønt, æg, brød, sennep, vin, cider og øl fra Sydsjælland, Møn og omegn.</p></div>
+      <div><h3>Direkte</h3><p>Du handler med dem, der dyrker, opdrætter og laver varerne. Friskere bliver det ikke.</p></div>
+      <div><h3>På gården</h3><p>Oremandsgaard har drevet økologisk landbrug siden 1967. Markedet ligger midt i det hele.</p></div>
+    </div>
+    <figure class="foto">
+      <img src="billeder/destilleriet.jpg" width="1600" height="1085" alt="Stader med æg, skind og flasker inde i destilleriet mellem kobberkedlerne" loading="lazy">
+      <figcaption>Nogle af staderne står inde mellem kobberkedlerne i destilleriet.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sektion" id="billeder">
+  <div class="wrap">
+    <h2>Fra markedet</h2>
+    <div class="streg"></div>
+    <div class="karrusel">
+      <button class="pil venstre" type="button" aria-label="Forrige billeder">&#8249;</button>
+      <div class="spor" id="spor">
+        <figure><img src="billeder/marked/gaarden-sommer.jpg" alt="Bondemarked på Oremandsgaard" loading="lazy"><figcaption>Bondemarked på Oremandsgaard</figcaption></figure>
+        <figure><img src="billeder/marked/langborde.jpg" alt="Frokost ved langbordene" loading="lazy"><figcaption>Frokost ved langbordene</figcaption></figure>
+        <figure><img src="billeder/marked/frivillige.jpg" alt="De frivillige ved æggestanden" loading="lazy"><figcaption>De frivillige ved æggestanden</figcaption></figure>
+        <figure><img src="billeder/marked/gaardrummet-sol.jpg" alt="Gårdrummet foran Radius Distillery" loading="lazy"><figcaption>Gårdrummet foran Radius Distillery</figcaption></figure>
+        <figure><img src="billeder/marked/marts-marked.jpg" alt="Sæsonstart i marts" loading="lazy"><figcaption>Sæsonstart i marts</figcaption></figure>
+        <figure><img src="billeder/marked/pladsen.jpg" alt="Pladsen ved den gamle avlsgård" loading="lazy"><figcaption>Pladsen ved den gamle avlsgård</figcaption></figure>
+        <figure><img src="billeder/destilleriet.jpg" alt="Inde mellem kobberkedlerne" loading="lazy"><figcaption>Inde mellem kobberkedlerne</figcaption></figure>
+        <figure><img src="billeder/producenter/koster-faergegaard.jpg" alt="Grillpølser fra Koster Færgegaard" loading="lazy"><figcaption>Grillpølser fra Koster Færgegaard</figcaption></figure>
+        <figure><img src="billeder/producenter/den-pink-isvogn.jpg" alt="Den Pink Isvogn" loading="lazy"><figcaption>Den Pink Isvogn</figcaption></figure>
+        <figure><img src="billeder/producenter/praestoe-bagvaerk.jpg" alt="Surdejsbrød fra Præstø Bagværk" loading="lazy"><figcaption>Surdejsbrød fra Præstø Bagværk</figcaption></figure>
+        <figure><img src="billeder/producenter/funga-habitat.jpg" alt="Svampe fra Funga Habitat" loading="lazy"><figcaption>Svampe fra Funga Habitat</figcaption></figure>
+        <figure><img src="billeder/producenter/tbw-keramik.jpg" alt="Keramik fra TBW" loading="lazy"><figcaption>Keramik fra TBW</figcaption></figure>
+      </div>
+      <button class="pil hoejre" type="button" aria-label="Næste billeder">&#8250;</button>
+    </div>
+    <p class="note" style="font-style:normal"><a class="knap smaa" href="https://www.instagram.com/oremandsgaardgods/" target="_blank" rel="noopener">Følg os på Instagram</a> <a class="knap smaa" href="https://www.facebook.com/1093431573852512" target="_blank" rel="noopener">Facebook</a></p>
+  </div>
+</section>
+
+<section class="sektion" id="datoer">
+  <div class="wrap">
+    <h2>Næste markeder</h2>
+    <div class="streg"></div>
+    <div class="datoer">
+      <div class="dato-kort">
+        <p class="smaa">Lørdag</p>
+        <p class="dag">7. november</p>
+        <p class="navn">Bondemarked</p>
+        <p>kl. 11–14</p>
+      </div>
+      <div class="dato-kort">
+        <p class="smaa">Lørdag</p>
+        <p class="dag">5. december</p>
+        <p class="navn">Julemarked</p>
+        <p>kl. 11–14</p>
+      </div>
+    </div>
+    <h3 class="ogsaa" style="color:inherit">Sæson 2027</h3>
+    <p class="note" style="font-style:normal">6.&nbsp;marts · 3.&nbsp;april · 1.&nbsp;maj · 5.&nbsp;juni · 3.&nbsp;juli · 7.&nbsp;august · 4.&nbsp;september · 2.&nbsp;oktober · 6.&nbsp;november · 4.&nbsp;december&nbsp;(julemarked)<br><em>Altid første lørdag i måneden kl. 11–14.</em></p>
+  </div>
+</section>
+
+<section class="sektion rod" id="stadeholdere">
+  <div class="wrap">
+    <h2>Dem kan du møde<br>7. november</h2>
+    <div class="streg"></div>
+    <div class="kortgrid">
+      <article class="kort">
+        <img src="billeder/producenter/dansk-jergyu.jpg" width="800" height="600" alt="Jergyu-kvæg på græs" loading="lazy">
+        <h3>Dansk Jergyu</h3>
+        <p>Kød fra Jergyu-kvæg</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/jergyu-foodtruck.jpg" width="800" height="600" alt="Burger fra Jergyu Foodtruck" loading="lazy">
+        <h3>Jergyu Foodtruck</h3>
+        <p>Jergyu-burgere</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/koster-faergegaard.jpg" width="800" height="600" alt="Grillpølse fra Koster Færgegaard" loading="lazy">
+        <h3>Koster Færgegaard</h3>
+        <p>Grillpølser</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/stensbygaard.jpg" width="800" height="600" alt="Kurv med garn og skind fra Stensbygaard" loading="lazy">
+        <h3>Stensbygaard</h3>
+        <p>Most, lammeskind, pølser</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/praestoe-bagvaerk.jpg" width="800" height="600" alt="Surdejsbrød fra Præstø Bagværk" loading="lazy">
+        <h3>Præstø Bagværk</h3>
+        <p>Surdejsbrød og søde sager</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/oremandsgaard-sennep.jpg" width="800" height="600" alt="Glas med chilisennep" loading="lazy">
+        <h3>Oremandsgaard Sennep</h3>
+        <p>Sennep fra gården</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/dansk-camelina.jpg" width="800" height="600" alt="Flasker med camelinaolie" loading="lazy">
+        <h3>Dansk Camelina</h3>
+        <p>Camelinaolie</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/skovridergaardens-univers.jpg" width="800" height="600" alt="Glas med honning og syltetøj" loading="lazy">
+        <h3>Skovridergaardens Univers</h3>
+        <p>Honningkager, honning, crepes</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/den-pink-isvogn.jpg" width="800" height="600" alt="Den pink isvogn på pladsen" loading="lazy">
+        <h3>Den Pink Isvogn</h3>
+        <p>Vafler og madpandekager</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/bryghuset-moen.jpg" width="800" height="600" alt="Brygger med flaske fra Bryghuset Møn" loading="lazy">
+        <h3>Bryghuset Møn</h3>
+        <p>Øl fra Møn</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/tbw-keramik.jpg" width="800" height="600" alt="Keramikskåle fra TBW" loading="lazy">
+        <h3>TBW Keramik</h3>
+        <p>Håndlavet keramik fra Jungshoved</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/orm-wood.jpg" width="800" height="600" alt="Skærebrætter og trævarer fra Orm Wood" loading="lazy">
+        <h3>Orm Wood</h3>
+        <p>Brugskunst af genbrugt træ og metal</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/elvangerne.jpg" width="800" height="600" alt="Stofvarer fra Elvangerne" loading="lazy">
+        <h3>Elvangerne</h3>
+        <p>Øreringe, forklæder, grydelapper, tasker</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/beewarm.jpg" width="800" height="600" alt="BeeWarms stand med bivokswraps" loading="lazy">
+        <h3>BeeWarm</h3>
+        <p>Bivokswraps</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/syltehuset.jpg" width="800" height="600" alt="Hylder med glas fra Syltehuset" loading="lazy">
+        <h3>Syltehuset</h3>
+        <p>Syltetøj, relish og ketchup</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/hjemsted-moen.jpg" width="800" height="600" alt="Hjemsted Møns stand med glas og pasta" loading="lazy">
+        <h3>Hjemsted Møn</h3>
+        <p>Pasta, eddiker, gastrik</p>
+      </article>
+      <article class="kort">
+        <img src="billeder/producenter/funga-habitat.jpg" width="560" height="420" alt="Anne Nørgaard Friis pakker svampe hos Funga Habitat" loading="lazy">
+        <h3>Funga Habitat</h3>
+        <p>Gourmetsvampe fra Møn</p>
+      </article>
+    </div>
+    <h3 class="ogsaa">Også med</h3>
+    <ul class="ogsaa-liste">
+      <li>Regular Foods<span>Nødder, snacks, chokolade</span></li>
+      <li>Heartwork<span>Plantetryk og tekstiler</span></li>
+      <li>Troldhøjgaard<span>Lammeskind</span></li>
+      <li>Valnødder fra Neblegaard</li>
+      <li>Saga Isheste</li>
+    </ul>
+    <div class="portraet">
+      <img class="portraet-foto" src="billeder/producenter/funga-habitat-anne.jpg" width="360" height="508" alt="Anne Nørgaard Friis i sin svampefabrik" loading="lazy">
+      <p class="smaa">Mød producenten</p>
+      <h3>Funga Habitat – svampe fra et gammelt værksted på Møn</h3>
+      <p>Øst for Stege, for enden af en grusvej og bag et lille skovstykke, dyrker Anne Nørgaard Friis gourmetsvampe i et gammelt værksted. I to mørke kølerum gror kejser- og østershatte, shiitake, nameko og pindsvinepigsvamp – den sidste er så sjælden i dansk natur, at den står på rødlisten.</p>
+      <p>Svampene vokser på savsmuld uden kemi, og der er sæson hele året. Det, der ikke bliver solgt frisk, bliver tørret. Anne har en baggrund i økonomi og biotek og startede med en spand halm og mycelium – nu høster hun omkring 45 kilo om ugen.</p>
+      <p>Navnet giver sig selv: flora er planterne, fauna er dyrene, og funga er svampene. Habitat er stedet, hvor de gror.</p>
+      <p class="kilde">Kilde: <a href="https://vordingborg.in/svampefabrikken-bag-den-lille-skov/111580/" target="_blank" rel="noopener">Vordingborg In</a></p>
+    </div>
+    <p class="note">Der kan komme mindre ændringer frem mod markedet.</p>
+  </div>
+</section>
+
+<section class="sektion" id="udstillere">
+  <div class="wrap">
+    <h2>Øvrige udstillere</h2>
+    <div class="streg"></div>
+    <p class="intro">Holdet skifter med sæsonen. Dem her har også været med i 2026 og kommer igen på nogle af markederne.</p>
+    <ul class="oevrige">
+      <li>Under Egen Jordbrug</li>
+      <li>Møllebakkegaard Æg</li>
+      <li>Burgerdrengene</li>
+      <li>Golden Hour Cider</li>
+      <li>Præstø Vingård</li>
+      <li>Møn Vingård</li>
+      <li>Lundsgård Æblemost</li>
+      <li>Grønsund Purpur</li>
+      <li>Fuglsangaard</li>
+      <li>Flintebjerggaard</li>
+      <li>Sandras Urtesalt</li>
+      <li>Kamillas Køkken</li>
+      <li>Sophies Univers</li>
+      <li>Jette Maj Kunst</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sektion" id="oplevelser">
+  <div class="wrap">
+    <h2>Mere end boder</h2>
+    <div class="streg"></div>
+    <div class="tre">
+      <div><h3>Destilleriet</h3><p>Radius Distillery holder åbent på markedsdagene. Smag gin, whisky og akvavit, og se kobberkedlerne.</p></div>
+      <div><h3>Børn og dyr</h3><p>Heste, hestevogn og ponyer på udvalgte markeder. Halmballer at lege på og plads til at løbe.</p></div>
+      <div><h3>Langborde</h3><p>Køb en burger eller en is og sid ned. Mange bliver hængende hele formiddagen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sektion rod" id="praktisk">
+  <div class="wrap">
+    <h2>Praktisk</h2>
+    <div class="streg"></div>
+    <div class="praktisk">
+      <div>
+        <h3>Hvor</h3>
+        <p>Oremandsgaard Allé 2<br>4720 Præstø</p>
+        <p style="margin-top:10px">Kør ind fra Mønvej mellem Allerslev og Mern og følg Oremandsgaard Allé til den store P-plads. Kør ikke op til hovedbygningen – den er privat.</p>
+        <a class="knap smaa" href="https://www.google.com/maps/search/?api=1&query=Oremandsgaard+All%C3%A9+2%2C+4720+Pr%C3%A6st%C3%B8" target="_blank" rel="noopener">Vis på kort</a>
+      </div>
+      <div>
+        <h3>Hvornår</h3>
+        <p>Første lørdag i måneden<br>fra marts til december<br>kl. 11–14</p>
+        <p style="margin-top:10px">Kom tidligt, hvis du vil have det hele – nogle stader bliver udsolgt.</p>
+      </div>
+      <div>
+        <h3>Godt at vide</h3>
+        <p>Gratis entré<br>Gratis parkering<br>Hunde i snor er velkomne<br>Toiletter på stedet<br>Radius Distillery har åbent</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sektion" id="faq">
+  <div class="wrap">
+    <h2>Spørgsmål</h2>
+    <div class="streg"></div>
+    <div class="faq">
+      <details>
+        <summary>Koster det noget at komme?</summary>
+        <p>Nej. Både entré og parkering er gratis.</p>
+      </details>
+      <details>
+        <summary>Må jeg tage hunden med?</summary>
+        <p>Ja, hunde i snor er velkomne.</p>
+      </details>
+      <details>
+        <summary>Hvad hvis det regner?</summary>
+        <p>Markedet holdes i næsten al slags vejr. De fleste stader står ude på gårdspladsen og nogle få inde i destilleriet. Ved storm kan vi blive nødt til at aflyse – det skriver vi på Facebook og Instagram om morgenen.</p>
+      </details>
+      <details>
+        <summary>Er der noget for børn?</summary>
+        <p>Ja. Der er dyr, plads til at lege og på de store markeder også hoppeborg og hestevogn.</p>
+      </details>
+      <details>
+        <summary>Kan jeg spise frokost?</summary>
+        <p>Ja. Der er altid foodtrucks og madboder, og langborde at sidde ved.</p>
+      </details>
+      <details>
+        <summary>Er der toiletter?</summary>
+        <p>Ja, der er toiletter på stedet.</p>
+      </details>
+      <details>
+        <summary>Kan man komme rundt med kørestol eller barnevogn?</summary>
+        <p>Alt foregår i ét plan, men det er en gammel gård med brosten, grus og lidt ujævnt terræn. Med barnevogn går det fint – med kørestol kan det være lidt bumpet.</p>
+      </details>
+      <details>
+        <summary>Er der marked hele året?</summary>
+        <p>Markedet holder sæson fra marts til december – første lørdag i måneden. I januar og februar holder vi pause. December er julemarked.</p>
+      </details>
+      <details>
+        <summary>Hvem står bag?</summary>
+        <p>Markedet drives af foreningen Oremandsgaard Kammermusikfest, Bondemarked &amp; Kultur med Radius Distillery og godset som værter. Langt det meste arbejde er frivilligt.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sektion rod" id="stadeholder">
+  <div class="wrap">
+    <h2>Bliv stadeholder</h2>
+    <div class="streg"></div>
+    <p class="intro">Laver du mad, råvarer eller håndværk i Sydsjælland eller på Møn? Vi er altid nysgerrige på nye producenter. Skriv til os med et par billeder af dine varer.</p>
+    <ul class="stadeinfo">
+      <li><strong>Pris:</strong> 10 % af dagens omsætning. Pengene går til markedsføring af markedet, og du får en faktura.</li>
+      <li><strong>Udstyr:</strong> Tag selv bord, telt og MobilePay-skilt med. Teltet skal kunne holde til vind – med vægte eller barduner.</li>
+      <li><strong>Plads:</strong> De fleste stader står ude på gårdspladsen. Der er plads til et par stykker inde i destilleriet.</li>
+      <li><strong>Strøm:</strong> Kan aftales på forhånd – skriv hvilken stiktype du skal bruge.</li>
+      <li><strong>Tilmelding:</strong> Senest ca. 10 dage før markedet.</li>
+    </ul>
+    <p style="text-align:center"><a class="knap smaa" href="mailto:john@radiusdistillery.com?subject=Stadeholder%20p%C3%A5%20Bondemarked">Skriv til os</a></p>
+  </div>
+</section>
+
+<section class="sektion" id="omtale">
+  <div class="wrap">
+    <p class="smaa" style="text-align:center">Omtalt i</p>
+    <div class="omtale">
+      <span>Femina</span><span>Alt for Damerne</span><span>Bo Bedre</span><span>TV2 Øst</span><span>Økologisk Nu</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="smaa">Bondemarked Oremandsgaard</p>
+    <div class="streg"></div>
+    <p>Oremandsgaard Allé 2 · 4720 Præstø</p>
+    <p>Oremandsgaard Kammermusikfest, Bondemarked &amp; Kultur · CVR 18020033</p>
+    <p style="margin-top:12px"><a href="https://www.facebook.com/1093431573852512" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/oremandsgaardgods/" target="_blank" rel="noopener">Instagram</a> · <a href="https://oremandsgaard.dk">oremandsgaard.dk</a></p>
+    <p><a href="mailto:john@radiusdistillery.com">john@radiusdistillery.com</a> · John Reinstein, markedschef</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var n=document.getElementById('menu'),b=n.querySelector('.menuknap');
+  b.addEventListener('click',function(){var o=n.classList.toggle('aaben');b.setAttribute('aria-expanded',o);b.textContent=o?'Luk':'Menu';});
+  n.querySelectorAll('ul a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('aaben');b.setAttribute('aria-expanded',false);b.textContent='Menu';});});
+  var s=document.getElementById('spor');
+  document.querySelector('.pil.venstre').addEventListener('click',function(){s.scrollBy({left:-s.clientWidth*0.8,behavior:'smooth'});});
+  document.querySelector('.pil.hoejre').addEventListener('click',function(){s.scrollBy({left:s.clientWidth*0.8,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
