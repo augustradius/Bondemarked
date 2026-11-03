@@ -131,7 +131,13 @@ nav ul a:hover{opacity:.7}
 /* praktisk */
 .praktisk{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px;margin-top:50px}
 .praktisk h3{font-size:1.5rem;margin-bottom:8px}
-.knap{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid currentColor;text-decoration:none;font-size:.85rem}
+.knap{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid currentColor;text-decoration:none;font-size:1.05rem;font-weight:600;letter-spacing:.02em}
+.knap-fyldt{background:var(--rod);color:var(--creme);border-color:var(--rod)}
+.knap-fyldt:hover{background:var(--rod-dyb)}
+.rod .knap-fyldt{background:var(--creme);color:var(--rod);border-color:var(--creme)}
+.rod .knap-fyldt:hover{background:transparent;color:var(--creme)}
+.naeste .knap-fyldt{background:var(--creme);color:var(--rod);border-color:var(--creme)}
+.naeste .knap-fyldt:hover{background:transparent;color:var(--creme)}
 .knap:hover{background:var(--rod);color:var(--creme)}
 .rod .knap:hover{background:var(--creme);color:var(--rod)}
 
@@ -181,7 +187,7 @@ footer p{margin:4px 0}
       <button class="menuknap" type="button" aria-expanded="false" aria-controls="menuliste">Menu</button>
       <ul class="smaa" id="menuliste">
         <li><a href="#datoer">Datoer</a></li>
-        <li><a href="#stadeholdere">7. november</a></li>
+        <li><a href="#stadeholdere">Dem der kommer</a></li>
         <li><a href="#udstillere">Udstillere</a></li>
         <li><a href="#billeder">Billeder</a></li>
         <li><a href="#praktisk">Praktisk</a></li>
@@ -198,6 +204,8 @@ footer p{margin:4px 0}
         <p class="smaa">Næste marked</p>
         <p class="dato">Lørdag 7. november</p>
         <p>kl. 11–14 · Gratis entré</p>
+        <a class="knap knap-fyldt" href="https://www.google.com/maps/search/?api=1&query=M%C3%B8nsvej+164%2C+4720+Pr%C3%A6st%C3%B8" target="_blank" rel="noopener">Find vej</a>
+        <p style="font-size:.9rem;margin-top:8px;opacity:.85">Indkørsel ud for Mønsvej 164</p>
       </div>
     </div>
     <figure class="foto foto-top">
@@ -245,7 +253,7 @@ footer p{margin:4px 0}
       </div>
       <button class="pil hoejre" type="button" aria-label="Næste billeder">&#8250;</button>
     </div>
-    <p class="note" style="font-style:normal"><a class="knap smaa" href="https://www.instagram.com/bondemarked/" target="_blank" rel="noopener">Følg os på Instagram</a> <a class="knap smaa" href="https://www.facebook.com/profile.php?id=61563130234067" target="_blank" rel="noopener">Facebook</a></p>
+    <p class="note" style="font-style:normal"><a class="knap" href="https://www.instagram.com/bondemarked/" target="_blank" rel="noopener">Følg os på Instagram</a> <a class="knap" href="https://www.facebook.com/profile.php?id=61563130234067" target="_blank" rel="noopener">Facebook</a></p>
   </div>
 </section>
 
@@ -277,7 +285,7 @@ footer p{margin:4px 0}
     <h2>Få nyt fra Bondemarkedet</h2>
     <div class="streg"></div>
     <p class="intro">Datoer, nye producenter og gode tilbud – direkte i indbakken. Fra det nye år får Bondemarkedet sit eget nyhedsbrev.</p>
-    <p style="text-align:center"><a class="knap smaa" href="https://mailchi.mp/9f8c1536183f/bondemarked-p-godset" target="_blank" rel="noopener">Tilmeld nyhedsbrevet</a></p>
+    <p style="text-align:center"><a class="knap knap-fyldt" href="https://mailchi.mp/9f8c1536183f/bondemarked-p-godset" target="_blank" rel="noopener">Tilmeld nyhedsbrevet</a></p>
   </div>
 </section>
 
@@ -286,6 +294,11 @@ footer p{margin:4px 0}
     <h2>Dem kan du møde<br>7. november</h2>
     <div class="streg"></div>
     <div class="kortgrid">
+      <article class="kort">
+        <img src="billeder/producenter/radius-distillery.jpg" width="800" height="600" alt="Kobberkedlerne i Radius Distillery på en markedsdag" loading="lazy">
+        <h3>Radius Distillery</h3>
+        <p>Gin, whisky og akvavit fra gården</p>
+      </article>
       <article class="kort">
         <img src="billeder/producenter/dansk-jergyu.jpg" width="800" height="600" alt="Jergyu-kvæg på græs" loading="lazy">
         <h3>Dansk Jergyu</h3>
@@ -426,7 +439,7 @@ footer p{margin:4px 0}
     <h2>Mere end boder</h2>
     <div class="streg"></div>
     <div class="tre">
-      <div><h3>Destilleriet</h3><p>Radius Distillery holder åbent på markedsdagene. Smag gin, whisky og akvavit, og se kobberkedlerne.</p></div>
+      <div><h3>Destilleriet</h3><p>Radius Distillery er vært for markedet sammen med godset og holder åbent på markedsdagene. Smag gin, whisky og akvavit, og se kobberkedlerne – flere af stadeholderne står inde i destilleriet.</p><p><a href="https://radiusdistillery.com" target="_blank" rel="noopener">radiusdistillery.com</a></p></div>
       <div><h3>Børn og dyr</h3><p>Heste, hestevogn og ponyer på udvalgte markeder. Halmballer at lege på og plads til at løbe.</p></div>
       <div><h3>Langborde</h3><p>Køb en burger eller en is og sid ned. Mange bliver hængende hele formiddagen.</p></div>
     </div>
@@ -442,7 +455,7 @@ footer p{margin:4px 0}
         <h3>Hvor</h3>
         <p>Oremandsgaard Allé 2<br>4720 Præstø</p>
         <p style="margin-top:10px"><strong>Indkørsel og parkering sker ud for Mønsvej 164</strong> – på den modsatte side af vejen. Følg skiltene til P-pladsen. Kør ikke op til hovedbygningen – den er privat.</p>
-        <a class="knap smaa" href="https://www.google.com/maps/search/?api=1&query=M%C3%B8nsvej+164%2C+4720+Pr%C3%A6st%C3%B8" target="_blank" rel="noopener">Vis indkørslen på kort</a>
+        <a class="knap knap-fyldt" href="https://www.google.com/maps/search/?api=1&query=M%C3%B8nsvej+164%2C+4720+Pr%C3%A6st%C3%B8" target="_blank" rel="noopener">Vis indkørslen på kort</a>
         <img src="billeder/marked/skilt-indkoersel.jpg" width="700" height="1131" alt="Skilt: Velkommen til Bondemarked – indkørsel og parkering sker fra modsatte side ud for Mønsvej 164" loading="lazy" style="display:block;width:100%;max-width:260px;height:auto;margin-top:18px">
       </div>
       <div>
@@ -525,7 +538,7 @@ footer p{margin:4px 0}
       <li><strong>Strøm:</strong> Kan aftales på forhånd – skriv hvilken stiktype du skal bruge.</li>
       <li><strong>Tilmelding:</strong> Senest ca. 10 dage før markedet.</li>
     </ul>
-    <p style="text-align:center"><a class="knap smaa" href="mailto:john@radiusdistillery.com?subject=Stadeholder%20p%C3%A5%20Bondemarked">Skriv til os</a></p>
+    <p style="text-align:center"><a class="knap" href="mailto:john@radiusdistillery.com?subject=Stadeholder%20p%C3%A5%20Bondemarked">Skriv til os</a></p>
   </div>
 </section>
 
